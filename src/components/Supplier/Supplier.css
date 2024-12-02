@@ -1,0 +1,35 @@
+.findyou {
+  display: inline-block;
+  border-bottom: 4px solid #eb7150;
+  padding-bottom: 3px;
+  margin-left: 2px;
+}
+
+.supplierbtn {
+  background-color: #eb7150;
+  border: none;
+  width: 100%;
+  max-width: 216px;
+  padding: 12px 0px;
+  font-weight: 700;
+}
+
+.container-supplier {
+  background-color: #e8fbff;
+  padding: 90px 15px; /* Add horizontal padding */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.SupplierIntro {
+  font-family: Poppins;
+  font-size: 37.34px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .SupplierIntro {
+    font-size: 28px; /* Adjust font size for smaller screens */
+    line-height: 32px;
+  }
+}

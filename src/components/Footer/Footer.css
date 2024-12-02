@@ -1,0 +1,145 @@
+.footer-container {
+  background-color: #123577;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer-hr {
+  width: 90%; /* Matches the width of the footer columns */
+  max-width: 1200px;
+  border: 0;
+  border-top: 1px solid #ccc; /* Thin line */
+  margin: 43px auto 34px auto; /* Spacing before/after footer */
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, auto) 1fr; /* 4 columns on the left, 1 column far on the right */
+  gap: 20px; /* Spacing between the first 4 columns */
+  align-items: start;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.footer-column {
+  text-align: left;
+  /* gap: 10px; */
+}
+
+.company-logo {
+  width: 206px;
+  height: 40.15px;
+  top: 9.73px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 54px 20px 0px 26px;
+}
+
+.ceo {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  margin: 20px 0px 0px 35px;
+}
+
+.footer-column h3 {
+  font-family: Arial;
+  font-size: 15.13px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  margin: 14px 0px 10px 0px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+/* Social Media Column Styling */
+.social-media {
+  text-align: right;
+  grid-column: 5; /* Ensures it's on the far right */
+  margin-left: 80px; /* Creates a large gap between this column and the others */
+}
+
+.social-media .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social-icons {
+  margin-top: 60px;
+}
+
+.social-icons a {
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-columns {
+    grid-template-columns: 1fr; /* Stack all columns on small screens */
+    gap: 20px;
+  }
+
+  .ceo {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-column {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-column h3 {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .social-media .social-icons {
+    justify-content: center;
+  }
+
+  .social-media {
+    display: none;
+  }
+}

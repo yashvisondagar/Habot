@@ -1,0 +1,126 @@
+/* Outer Blue Container */
+.blue-container {
+  background-color: #072f57; /* Blue background color */
+  margin: -20px auto 0px 0px; /* Center the container horizontally */
+  padding: 137px 20px 130px 40px;
+}
+
+/* Video Section */
+.video-section {
+  width: 640px; /* Set a fixed width for the section */
+  height: 360px; /* Set a height for the section (e.g., for a video or image ratio) */
+  background-image: url("../../../public/images/youtube.png"); /* Set the background image */
+  background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+  background-size: cover; /* Cover the entire section, scaling as needed */
+  background-position: center; /* Center the background image */
+  display: flex; /* Use flexbox for centering the content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding-right: 10px; /* Optional padding, can be removed if not needed */
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.topics-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 260px;
+  border-radius: 8px;
+}
+.topic-box,
+.topic-boxx {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.topic-boxx h2 {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.topic-box h2 {
+  position: relative;
+  color: #eb7150;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+
+.topic-box h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Space between text and underline */
+  left: -10px; /* Move the underline a bit to the left */
+  right: -10px; /* Move the underline a bit to the right */
+  height: 2px; /* Thickness of the underline */
+  background-color: #eb7150; /* Color of the underline */
+}
+
+.bullet-points {
+  list-style: none;
+  /* padding: 0; */
+  margin: 0;
+  padding-top: 40px;
+}
+
+.bullet-pointss {
+  visibility: hidden;
+
+  /* display: none; */
+  padding-top: 85px;
+}
+
+.bullet-points li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+
+.bullet-points li img {
+  padding-right: 10px;
+}
+
+/* Responsive: Stack sections vertically on small screens */
+@media (max-width: 768px) {
+  .blue-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .video-section,
+  .topics-section {
+    width: 100%; /* Make both sections full width */
+  }
+
+  .topics-section {
+    margin-top: 20px; /* Add spacing between sections */
+  }
+}
